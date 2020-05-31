@@ -4,7 +4,7 @@ namespace App\Entities;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Ciudad extends Model
+class Municipio extends Model
 {
     //
 }

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Entities\Ciudad;
+use App\Entities\Municipio;
 use Illuminate\Http\Request;
 
-class CiudadController extends Controller
+class MunicipioController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class CiudadController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Entities\Ciudad  $ciudad
+     * @param  \App\Entities\Municipio  $municipio
      * @return \Illuminate\Http\Response
      */
-    public function show(Ciudad $ciudad)
+    public function show(Municipio $municipio)
     {
         //
     }
@@ -52,10 +52,10 @@ class CiudadController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Entities\Ciudad  $ciudad
+     * @param  \App\Entities\Municipio  $municipio
      * @return \Illuminate\Http\Response
      */
-    public function edit(Ciudad $ciudad)
+    public function edit(Municipio $municipio)
     {
         //
     }
@@ -64,10 +64,10 @@ class CiudadController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Entities\Ciudad  $ciudad
+     * @param  \App\Entities\Municipio  $municipio
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Ciudad $ciudad)
+    public function update(Request $request, Municipio $municipio)
     {
         //
     }
@@ -75,10 +75,10 @@ class CiudadController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Entities\Ciudad  $ciudad
+     * @param  \App\Entities\Municipio  $municipio
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Ciudad $ciudad)
+    public function destroy(Municipio $municipio)
     {
         //
     }
