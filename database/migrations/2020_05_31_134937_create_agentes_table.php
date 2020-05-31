@@ -15,6 +15,8 @@ class CreateAgentesTable extends Migration
     {
         Schema::create('agentes', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('cedula');
+            $table->string('name');
             $table->timestamps();
         });
     }

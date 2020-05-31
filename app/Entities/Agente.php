@@ -6,5 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Agente extends Model
 {
-    //
+    protected $fillable = [
+    	'cedula',
+    	'name'
+    ];
 }
