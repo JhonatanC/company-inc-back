@@ -14,7 +14,7 @@ class AgenteController extends Controller
      */
     public function index()
     {
-        //
+        return Agente::all();
     }
 
     /**
@@ -35,7 +35,8 @@ class AgenteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $agente = agente::create($request->all());
+        return $cliente;
     }
 
     /**
@@ -46,7 +47,7 @@ class AgenteController extends Controller
      */
     public function show(Agente $agente)
     {
-        //
+        return $agente;
     }
 
     /**
@@ -69,7 +70,8 @@ class AgenteController extends Controller
      */
     public function update(Request $request, Agente $agente)
     {
-        //
+        $agente->update($request->all());
+        return $agente;
     }
 
     /**
@@ -80,6 +82,7 @@ class AgenteController extends Controller
      */
     public function destroy(Agente $agente)
     {
-        //
+        $agente->delete();
+        return $agente;
     }
 }

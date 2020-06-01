@@ -35,7 +35,8 @@ class DepartamentoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $departamento = departamento::create($request->all());
+        return $departamento;
     }
 
     /**
@@ -57,7 +58,7 @@ class DepartamentoController extends Controller
      */
     public function edit(Departamento $departamento)
     {
-        //
+        return $departamento;
     }
 
     /**
@@ -69,7 +70,8 @@ class DepartamentoController extends Controller
      */
     public function update(Request $request, Departamento $departamento)
     {
-        //
+        $departamento->update($request->all());
+        return $departamento;
     }
 
     /**
@@ -80,6 +82,7 @@ class DepartamentoController extends Controller
      */
     public function destroy(Departamento $departamento)
     {
-        //
+        $departamento->delete();
+        return $departamento;
     }
 }

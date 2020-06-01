@@ -14,7 +14,7 @@ class MunicipioController extends Controller
      */
     public function index()
     {
-        //
+        return Municipio::all();
     }
 
     /**
@@ -35,7 +35,8 @@ class MunicipioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $municipio = departamento::create($request->all());
+        return $municipio;
     }
 
     /**
@@ -57,7 +58,7 @@ class MunicipioController extends Controller
      */
     public function edit(Municipio $municipio)
     {
-        //
+        return $municipio;
     }
 
     /**
@@ -69,7 +70,8 @@ class MunicipioController extends Controller
      */
     public function update(Request $request, Municipio $municipio)
     {
-        //
+        $municipio->update($request->all());
+        return $municipio;
     }
 
     /**
@@ -80,6 +82,7 @@ class MunicipioController extends Controller
      */
     public function destroy(Municipio $municipio)
     {
-        //
+        $municipio->delete();
+        return $municipio;
     }
 }

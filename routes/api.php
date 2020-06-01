@@ -18,3 +18,6 @@ use Illuminate\Http\Request;
 });*/
 
 Route::apiResource('/clientes', 'ClienteController');
+Route::apiResource('/departamentos', 'DepartamentoController');
+Route::apiResource('/municipios', 'MunicipioController');
+Route::apiResource('/agentes', 'AgenteController');
