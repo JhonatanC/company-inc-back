@@ -14,7 +14,8 @@ class DepartamentoController extends Controller
      */
     public function index()
     {
-        return Departamento::all();
+        //return Departamento::all();
+        return Departamento::orderBy('name','desc')->get();
     }
 
     /**
